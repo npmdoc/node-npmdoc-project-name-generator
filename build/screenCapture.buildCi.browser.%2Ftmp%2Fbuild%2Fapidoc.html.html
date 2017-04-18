@@ -1,0 +1,255 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/aceakash/project-name-generator#readme">project-name-generator (v2.1.3)</a>
+</h1>
+<h4>Generate a random, unique, heroku-like name for your app/project/server etc. e.g. "resonant-silence"</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.project-name-generator">module project-name-generator</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.project-name-generator.project-name-generator">
+            function <span class="apidocSignatureSpan"></span>project-name-generator
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.project-name-generator.generate">
+            function <span class="apidocSignatureSpan">project-name-generator.</span>generate
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.project-name-generator.toString">
+            function <span class="apidocSignatureSpan">project-name-generator.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">project-name-generator.</span>spec_helpers</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.project-name-generator.generate">module project-name-generator.generate</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.project-name-generator.generate.generate">
+            function <span class="apidocSignatureSpan">project-name-generator.</span>generate
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.project-name-generator.spec_helpers">module project-name-generator.spec_helpers</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.project-name-generator.spec_helpers.isArray">
+            function <span class="apidocSignatureSpan">project-name-generator.spec_helpers.</span>isArray
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.project-name-generator" id="apidoc.module.project-name-generator">module project-name-generator</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.project-name-generator.project-name-generator" id="apidoc.element.project-name-generator.project-name-generator">
+        function <span class="apidocSignatureSpan"></span>project-name-generator
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function generate(options) {
+  var defaults = {
+    number: false,
+    words: 2,
+    alliterative: false,
+  };
+  options = _.merge(defaults, options || {});
+
+  var raw = getRawProjName(options);
+
+  return {
+    raw: raw,
+    dashed: raw.join('-'),
+    spaced: raw.join(' ')
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.project-name-generator.generate" id="apidoc.element.project-name-generator.generate">
+        function <span class="apidocSignatureSpan">project-name-generator.</span>generate
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function generate(options) {
+  var defaults = {
+    number: false,
+    words: 2,
+    alliterative: false,
+  };
+  options = _.merge(defaults, options || {});
+
+  var raw = getRawProjName(options);
+
+  return {
+    raw: raw,
+    dashed: raw.join('-'),
+    spaced: raw.join(' ')
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.project-name-generator.toString" id="apidoc.element.project-name-generator.toString">
+        function <span class="apidocSignatureSpan">project-name-generator.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.project-name-generator.generate" id="apidoc.module.project-name-generator.generate">module project-name-generator.generate</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.project-name-generator.generate.generate" id="apidoc.element.project-name-generator.generate.generate">
+        function <span class="apidocSignatureSpan">project-name-generator.</span>generate
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function generate(options) {
+  var defaults = {
+    number: false,
+    words: 2,
+    alliterative: false,
+  };
+  options = _.merge(defaults, options || {});
+
+  var raw = getRawProjName(options);
+
+  return {
+    raw: raw,
+    dashed: raw.join('-'),
+    spaced: raw.join(' ')
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.project-name-generator.spec_helpers" id="apidoc.module.project-name-generator.spec_helpers">module project-name-generator.spec_helpers</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.project-name-generator.spec_helpers.isArray" id="apidoc.element.project-name-generator.spec_helpers.isArray">
+        function <span class="apidocSignatureSpan">project-name-generator.spec_helpers.</span>isArray
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isArray() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
