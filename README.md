@@ -1,6 +1,6 @@
 # npmdoc-project-name-generator
 
-#### api documentation for  [project-name-generator (v2.1.3)](https://github.com/aceakash/project-name-generator#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-project-name-generator.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-project-name-generator) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-project-name-generator.svg)](https://travis-ci.org/npmdoc/node-npmdoc-project-name-generator)
+#### basic api documentation for  [project-name-generator (v2.1.3)](https://github.com/aceakash/project-name-generator#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-project-name-generator.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-project-name-generator) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-project-name-generator.svg)](https://travis-ci.org/npmdoc/node-npmdoc-project-name-generator)
 
 #### Generate a random, unique, heroku-like name for your app/project/server etc. e.g. "resonant-silence"
 
